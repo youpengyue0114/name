@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.12.3.min/jquery-1.12.3.min.js"></script>
+		
+	</head>
+	<!--<body>
+		 <div id="box" style="background: #98bf21; height: 100px; width: 100px; margin: 6px;">
+	</div>
+	<button id="btn1">Animate</button>
+	<button id="btn2">Reset</button> -->
+
+	 点击按钮后div元素的几个不同属性一同变化 
+	 <div id="div" style="background: #ff0; border: 1px solid #f00;">Hello!</div>
+	<button id="btn"> Run</button> 
+
+	<!-- 让指定元素左右移动 -->
+	<!-- <div class="block" style="width: 100px; height: 100px; background: #0f0; position: absolute; top: 100px;"></div>
+	<button id="left">«</button> <button id="right">»</button> -->
+
+	<!-- 在600毫秒内切换段落的高度和透明度 -->
+	<!-- <div class="block" style="width: 100px; height: 100px; background: #0f0;"></div> -->
+	<!-- <button id="btn">高度和透明度</button> -->
+	<!-- <button id="btn1">透明度show</button> -->
+
+	<!-- stop -->
+	<!-- <button id="stop">stop</button> -->
+
+	<!-- delay -->
+	<!-- <div id="foo" style="width: 100px; height: 100px; background: #f00;"></div>
+	<button id="btn">delay</button> -->
+		
+	</body>
+	<script type="text/javascript">
+       $(function() {
+				// animate(params,[speed],[easing],[fn])执行 CSS 属性集的自定义动画
+				// params CSS 属性集  CSS属性值是逐渐改变的，这样就可以创建动画效果。
+				// ({ height: 'toggle', opacity: 'toggle'}
+				// 使用 "+=" 或 "-=" 来创建相对动画 //累加动画(累减)
+				// 所有指定的属性必须用骆驼形式，比如用marginLeft代替margin-left. 
+
+			
+			// 改变单个属性
+//			 $("#btn1").click(function(){
+//			     $("#box").animate({height: "300px"});
+//			 });
+//			 $("#btn2").click(function(){
+//			     $("#box").animate({height: "100px"});
+//			 });
+			
+			// 点击按钮后div元素的几个不同属性一同变化  同步动画
+			
+			// $("#btn").click(function() {
+			// 	$("#div").animate({
+			// 		width: "90%",
+			// 		height: "100%",
+			// 		fontSize: "100px",
+			// 		borderWidth: 12
+			// 	}, 4000)
+			// });
+			// $("#btn").click(function(){
+			//   $("#div").animate({ 
+			//     width: "90%",
+			//     height: "100%", 
+			//     fontSize: "100px", 
+			//     borderWidth: 10
+			//   }, 4000 );
+			// });
+			// 
+			//可以通过连缀写法去实现列队动画
+			// $("#btn").click(function(){
+			// $("#div").animate({width:"90%"}, 2000), 
+			// 		 .animate({height:"100%"}, 2000),
+			// 		 .animate({fontSize:"100px"}, 2000),
+			// 		 .animate({borderWidth:"10"}, 2000);
+			// });
+			
+			// $("#btn").click(function(){
+			// 		$("#div").animate({width:"90%"}, 2000, function() {
+			// 			$("#div").animate({fontSize:"100px"}, 2000)
+			// 		}
+			// 	)
+			// });
+
+			// 让指定元素左右移动
+			// $("#right").click(function(){
+			//   $(".block").animate({left: '+=50px'}, "slow");
+			// });
+
+			// $("#left").click(function(){
+			//   $(".block").animate({left: '-=50px'}, "slow");
+			// });
+			
+			// 在600毫秒内切换段落的高度和透明度
+			// $("#btn").click(function() {
+			// 	$("div").animate({
+					   
+			// 	}, "slow");
+			// })
+			// $("#btn").click(function() {
+			// 	$("div").animate({
+			// 		   // height: 'toggle'
+			// 		   opacity: 'toggle'
+			// 	}, "slow");
+			// })
+			
+			// // opacity设为show
+			// $("#btn1").click(function() {
+			// 	$("div").animate({
+			// 		opacity: 'show'
+			// 	}, "slow");
+			// })
+
+			// stop停止所有在指定元素上正在运行的动画。
+			// $("#stop").click(function(){
+			//   $("#div").stop();
+			// });
+			
+			// delay(duration,[queueName])设置一个延时来推迟执行队列中之后的项目
+			// $("#btn").click(function() {
+			// 	$('#foo').slideUp(1000).delay(1000).fadeIn(1000);
+			// })
+		})
+	</script>
+</html>

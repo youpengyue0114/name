@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.12.3.min/jquery-1.12.3.min.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+	   
+	   
+	   <input class="field" type="text" />
+	<select class="field1" name="cars">
+		<option value="volvo">Volvo</option>
+		<option value="saab">Saab</option>
+		<option value="fiat">Fiat</option>
+		<option value="audi">Audi</option>
+	</select>
+
+	</body>
+	<script type="text/javascript">
+       
+       $(".field").change(function(){
+       	   $(".field").css("background","red");
+       })
+
+        
+       	   $(".field1").click({name:"哈哈"},function(e){
+       	   	 console.log(e.data.name)
+       	   	 
+       	   })
+       
+            $(".field1").click({},function(e){
+            	
+            })
+	</script>
+</html>

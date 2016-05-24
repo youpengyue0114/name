@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	  <script src="js/jquery-1.12.3.min/jquery-1.12.3.min.js"></script>
+	  <script src="js/jquery.js"></script>
+	  
+	</head>
+	<body>
+    <!--<input id="txt" type="text"/>-->
+      <!--<select id="sel">
+      <option value="葡萄">葡萄</option>
+      <option value="苹果">苹果</option>
+      <option value="荔枝">荔枝</option>
+      <option value="香蕉">香蕉</option>
+     
+      	<div></div>
+      </select>-->
+      
+      <!--<a href="###" id="aaa">点我就走</a>-->
+      <!--<div>我要去的地方是:<span id="typ"></span></div>-->
+     <!--<div></div>-->
+     
+     <!--<span class="red" title="hi">你上课都发你看</span>-->
+     
+     <!--<span class="green">我们交个朋友吧</span>-->
+     <!--<div id="div">aaaa</div>-->
+     
+     <p><input type="text" /><span>focusout fire</span></p>
+     <p><input type="password" /> <span>focusout fire</span></p>
+     
+	</body>
+	<script type="text/javascript">
+//    $("input").bind("focus",function(){
+//    	  $("div").html("请输入您的姓名");
+//    })
+     
+//	 $("select").bind("change",function(){
+//	 $("div").html("你选择的事:"+$(this).val());		
+//	 })
+//    var $url = $("#aaa").attr("href");
+//     $("#typ").html($url);
+//   $(".red").wrapInner().css("background","red")
+//   $(".red").wrap("<div></div>");
+//     var $html = "<span>土豪，</span>"
+//      $(".green").after($html);
+   
+//      $("input").keydown(function(){
+//      	 $("#div").html("font-size","20px");
+//      	
+//      })
+
+
+    $("p").focusin(function() {
+  $(this).find("span").css('display','inline').fadeOut(1000);
+});
+	</script>
+	  
+</html>
